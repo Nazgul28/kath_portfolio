@@ -1,7 +1,7 @@
 /*!
-Theme Name: Katherine Wearing portfolio
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Luis Massola
+Author: RED Academy
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -407,28 +407,14 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
-    margin: 0;
-    padding-left: 0; }
+    margin: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -461,9 +447,7 @@ a {
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+    display: none; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -656,3 +640,164 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.content-area {
+  margin-right: auto;
+  margin-left: auto; }
+
+.hero {
+  background: url(../../images/background.jpeg) fixed no-repeat center center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 1000px;
+  margin-bottom: 3rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .hero .herotext {
+    text-align: center;
+    width: 90%;
+    line-height: 1.80rem;
+    padding-bottom: 37rem; }
+    .hero .herotext p {
+      color: black;
+      font-size: 16px;
+      text-transform: none; }
+
+.button {
+  border-top: 1px solid #96d1f8;
+  background: yellow;
+  background: -o-linear-gradient(top, #d8f216, #c1d665);
+  padding: 12px 24px;
+  border-radius: 1px;
+  box-shadow: black 0 1px 0;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: black;
+  font-size: 16px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  text-transform: uppercase; }
+
+.button:hover {
+  border-top-color: #b8dbb8;
+  background: yellow;
+  color: red; }
+
+.button:active {
+  border-top-color: #aeb2c2;
+  background: #091954; }
+
+/* WORK - Projects */
+.project-type-blocks {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .project-type-blocks .project-type-block-wrapper a {
+    color: black;
+    text-decoration: none; }
+  .project-type-blocks a:hover {
+    color: red; }
+  .project-type-blocks h3 {
+    text-align: center; }
+
+/* Header  */
+.search-form fieldset {
+  display: none; }
+
+.site-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  padding-left: 1rem; }
+  .site-header .logoheader img {
+    max-width: 100%; }
+  @media (min-width: 1240px) {
+    .site-header {
+      border-bottom: 1px solid black; } }
+
+.menu {
+  padding: 1rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .menu li {
+    font-size: 14px;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding-left: 0.75rem; }
+    .menu li a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.10rem; }
+    .menu li a:hover {
+      color: red; }
+  .menu #menu-item-43 {
+    display: none;
+    padding-top: 0; }
+    .menu #menu-item-43 a {
+      font-size: 13px; }
+    @media (min-width: 480px) {
+      .menu #menu-item-43 {
+        display: block; }
+        .menu #menu-item-43 li a {
+          font-size: 0.90rem; } }
+  @media (min-width: 1240px) {
+    .menu {
+      padding-top: 2.5rem; }
+      .menu li a {
+        font-size: 1.5rem; } }
+
+/* Footer */
+.socialmedia {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
+  .socialmedia li {
+    font-size: 14px;
+    text-transform: uppercase;
+    list-style-type: none; }
+    .socialmedia li a {
+      color: black;
+      text-decoration: none; }
+    .socialmedia li a:hover {
+      color: red; }
+  @media (min-width: 1240px) {
+    .socialmedia li {
+      font-size: 20px; } }

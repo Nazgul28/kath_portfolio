@@ -3,3 +3,134 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.content-area {
+    @include lm-desktop;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.hero {
+    background: url(../../images/background.jpeg) fixed no-repeat center center;
+    justify-content: center;
+    height: 1000px;
+    margin-bottom: 3rem;
+    width:100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .herotext{
+    		text-align: center;
+    		width:90%;
+    		line-height: 1.80rem;
+    		padding-bottom: 37rem;
+    p {
+        color: black;
+        font-size: 16px;
+        text-transform: none;
+    }
+    @include lm-desktop {
+    	// display: flex;
+    	// align-items: center;
+    	// .herotext{
+    	// 	text-align: center;
+    	// 	width:50%;
+    	// 	line-height: 1.90rem;
+    	// 	padding-bottom: 45rem;
+    	}
+
+    }
+}
+
+// button
+
+.button {
+   border-top: 1px solid #96d1f8;
+   background: yellow;
+   background: -webkit-gradient(linear, left top, left bottom, from(#d8f216), to(#c1d665));
+   background: -webkit-linear-gradient(top, #d8f216, #c1d665);
+   background: -moz-linear-gradient(top, #d8f216, #c1d665);
+   background: -ms-linear-gradient(top, #d8f216, #c1d665);
+   background: -o-linear-gradient(top, #d8f216, #c1d665);
+   padding: 12px 24px;
+   -webkit-border-radius: 1px;
+   -moz-border-radius: 1px;
+   border-radius: 1px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: black;
+   font-size: 16px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-transform: uppercase;
+   }
+.button:hover {
+   border-top-color: #b8dbb8;
+   background: yellow;
+   color: red;
+   }
+.button:active {
+   border-top-color:#aeb2c2;
+   background: #091954;
+   }
+
+/* WORK - Projects */
+
+
+.project-type-blocks{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include lm-phone;
+
+	.project-type-block-wrapper a{
+		color: black;
+		text-decoration: none;
+	}
+	a:hover{
+		color: red;
+	}
+
+	h3{
+		text-align: center;
+	}
+
+	@include lm-desktop {
+
+	}
+
+
+
+	}
+
+
+
+
+
+
+
+
+	// @include lm-phone{
+	// 	display:
+	// }
+
+
+
+// 	@include lm-desktop{
+// 	display: flex;
+// 	justify-content: space-between;
+
+// 	.project-type-block-wrapper a{
+// 		color: black;
+// 		text-decoration: none;
+// 	}
+// 	a:hover{
+// 		color: red;
+// 	}
+// }
