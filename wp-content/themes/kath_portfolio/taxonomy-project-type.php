@@ -20,17 +20,22 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="eachproject">
+					<div class="pic"> 
+					<?php the_post_thumbnail( 'medium' ); ?>
+					</div>
+					<div class="picinfo">
+					<a href="<?php the_permalink();?>"> <?php the_title('<h3 class="entry-title">', '</h3>' ); ?></a>
+					<?php the_content(); ?>
+					</div>
+				</div>
 
 			<?php endwhile; ?>
+			<?php the_posts_navigation();?>
+		<?php else: ?>
 
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 

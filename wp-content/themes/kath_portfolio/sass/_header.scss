@@ -5,10 +5,15 @@
 
 .search-form fieldset{
 	display: none;
+	font-family: $font__main;
 
 }
 
+
 .site-header{
+	width:100%;
+	background: rgba(0, 0, 0, 0.15);
+	position: relative;
 	@include lm-phone;
 	display: flex;
 	justify-content: space-between;
@@ -17,6 +22,7 @@
 	margin-right: auto;
 	padding-right: 1rem;
 	padding-left: 1rem;
+	
 	.logoheader img {
 			max-width: 100%;
 	}
@@ -26,7 +32,21 @@
 	}
 }
 
+
+.fixed-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+}
+
+
    .menu {
+   	color: $color__text-main;
+   	font-family: $font__main;
    	padding: 1rem; 
    	display: flex;
    	justify-content: space-between;

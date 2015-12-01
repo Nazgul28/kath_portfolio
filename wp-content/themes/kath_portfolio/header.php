@@ -22,10 +22,11 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="header-container">
-
+					<!-- IF I WANT TO DO THE STICKY MENU WITH CSS -->
+					<!-- <nav id="site-navigation" class="main-navigation" role="navigation"> -->
 					<div class= "logoheader">
 							<a href="<?php echo home_url();?>">
-								<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.png"/>
+								<img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/transparentlogo.png"/>
 							</a>
 						</div>
 				</div><!-- .site-branding -->
