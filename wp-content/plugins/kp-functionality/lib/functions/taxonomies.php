@@ -8,7 +8,7 @@
  /**
   * Create "Product Type" Taxonomy
   */
- function kath_portfolio_register_project_type_taxonomy() {
+ function kath_portfolio_project_type_taxonomy() {
 
    $slug = 'project-type';
    $name = 'Project Types';
@@ -44,4 +44,4 @@
    register_taxonomy( $slug, array( 'project' ), $args );
  }
 
- add_action( 'init', 'kath_portfolio_register_project_type_taxonomy', 0 );
+ add_action( 'init', 'kath_portfolio_project_type_taxonomy', 0 );

@@ -1,16 +1,16 @@
 <?php
  /**
  *
- * @package   Le Red Bread Functionality
- * @author    Mandi Wise <mandi@redacademy.com>
+ * @package   kp-Functionality
+ * @author    Luis Massola <lfmassola@gmail.com>
  * @license   GPL-2.0+
  * @copyright 2015 Your Name or Company
  *
  * @wordpress-plugin
- * Plugin Name: Le Red Bread Functionality
+ * Plugin Name: Kath Portfolio functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
- * Author:      Mandi Wise
+ * Author:      Luis
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
