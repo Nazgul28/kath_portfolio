@@ -19,6 +19,12 @@
   }
 }
 
+@mixin lm-tablet {
+  @media (min-width: #{$lm-tablet-width}) {
+    @content;
+  }
+}
+
 @mixin lm-desktop {
   @media (min-width: #{$lm-desktop-width}) {
     @content;

@@ -139,6 +139,15 @@ add_filter( 'comment_text', 'kath_portfolio_filter_comment_text', 99 );
  * Customize the Product archive title.
  */
 
+function kath_portfolio_archive_title ($title){
+	if (is_tax('project-type')){
+		$title= sprintf('%1$s', single_term_title ( '', false)); 
+	}
+	return $title;
+}
+
+add_filter ('get_the_archive_title', 'kath_portfolio_archive_title');
+
 /**
  * Filter the Product post type archive.
  */

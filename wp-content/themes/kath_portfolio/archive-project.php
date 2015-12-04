@@ -17,8 +17,10 @@ get_header(); ?>
                   $terms = get_terms( 'project-type' );
                   if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
                ?>
+           		<div class="wrapper">
                   <div class="project-type-blocks">
                      <?php foreach ( $terms as $term ) : ?>
+         
                         <div class="project-type-block-wrapper">
                            <a href="<?php echo get_term_link( $term ); ?>">
                            	<h3><?php echo $term->name; ?></h3>
@@ -27,6 +29,8 @@ get_header(); ?>
                         </div>
                      <?php endforeach; ?>
                   </div>
+                 </div>
+
                <?php endif; ?>
 				</header>
 			<?php endif; ?>

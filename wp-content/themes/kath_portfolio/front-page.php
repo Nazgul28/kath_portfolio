@@ -18,21 +18,22 @@ get_header(); ?>
 			<a href="<?php echo home_url('/#what'); ?>" class="button"> What I do </a>
 			</span>
 		</div>
-		
+ 
 		<div class="what">
 			<h2> What I do </h2>
 			<h3> I question if there is a better solution and then strive to find it.</h3>
-			<a name="what"></a>
 			<p> Using a combination of design thinking, healthy curiosity, and a toolbox of skills that usually include:
 			 Digging into qualitative & quantitative research, information architecture, user flows & stories.
 			 Building prototypes, wireframes & constantly user testing. 
 		 I thrive when problem solving & working towards finding the most enjoyable solution for the user and the best solution for the client.</p>
+		
 		</div>
 
-		<hr class="decorative"></hr>
+		<hr class="decorative">
+		<a name="what"></a>
+		</hr>
 
 	<div class="container">
-
 		<div class ="about">
 			<h2> About me </h2>
 			<p> I have always been infatuated with design, from simple elegant visuals to cheeky work that stands for something.

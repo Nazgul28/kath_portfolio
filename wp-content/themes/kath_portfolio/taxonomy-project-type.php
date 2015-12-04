@@ -19,18 +19,21 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
+			<div class="project-menu">
+    			<?php /* Start the Loop */ ?>
+    			<?php while ( have_posts() ) : the_post(); ?>
+    			<?php the_title( sprintf( '<h2 class="entry-title-menu"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+               <div class="project-menu-item">
+                  <?php if ( has_post_thumbnail() ) : ?>
+                  <div class="project-thumbnail">
+                     <?php the_post_thumbnail( 'thumbnail' ); ?>
+                  </div>
+                  <?php endif; ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="eachproject">
-					<div class="pic"> 
-					<?php the_post_thumbnail( 'medium' ); ?>
-					</div>
-					<div class="picinfo">
-					<a href="<?php the_permalink();?>"> <?php the_title('<h3 class="entry-title">', '</h3>' ); ?></a>
-					<?php the_content(); ?>
-					</div>
-				</div>
+                  <div class="project-info">
+                     <?php the_content(); ?>
+                  </div>
+               </div>
 
 			<?php endwhile; ?>
 			<?php the_posts_navigation();?>
