@@ -5,12 +5,11 @@
 	font-family: $font__main;
 	display: flex;
 	justify-content: space-between;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin-left: auto;
-	margin-right: auto;
+	padding-top: 1rem;
+	margin-bottom: 1rem;
+	margin: 0 auto;
+	width:100%;
 	li{
-		font-size: 14px;
 		text-transform: uppercase;
 		list-style-type: none;
 	a{
@@ -22,15 +21,70 @@
 	}
 	}
 	@include lm-phone {
-		// background-color: brown;
+		margin-bottom: 1rem;
+		width: 100%;
+		padding-left: 0px;
+
+		li{
+			padding-right: 0.20rem;
+		}
+
+		li a{
+			color: black;
+			font-size: 12px;
+		}
+		
+	}
+	@include lm-tablet {
+		margin-bottom: 1rem;
+		width: 100%;
+		padding-left: 0px;
+
+		li{
+			padding-right: 0.20rem;
+		}
+
+		li a{
+			color: black;
+			font-size: 16px;
+		}
+		
 	}
 	@include lm-desktop {
-		// background-color: red;
-		li{
-			font-size: 20px;
+		margin-bottom: 1rem;
+		width: 100%;
+		padding-left: 0px;
 
+		li{
+			padding-right: 0.20rem;
 		}
+
+		li a{
+			color: black;
+			font-size: 18px;
+		}
+		
 	}
 
 }
+
+	// @include lm-tablet {
+	// 	.socialmedia{
+	// 	padding-left: 1rem;
+	// 	padding-right: 1rem;
+	// }
+	// 	li a{
+	// 		font-size: 1.35rem;
+	// 	}
+	// }
+
+// 	@include lm-desktop {
+// 		padding-right: 1rem;
+// 		 padding-left: 1rem;
+// 		 li a{
+// 		 	font-size: 1.5rem;
+// 		 }
+// 	}
+
+// }
 

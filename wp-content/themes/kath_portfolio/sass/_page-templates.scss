@@ -35,13 +35,6 @@
         text-transform: none;
     }
     @include lm-desktop {
-    	// display: flex;
-    	// align-items: center;
-    	// .herotext{
-    	// 	text-align: center;
-    	// 	width:50%;
-    	// 	line-height: 1.90rem;
-    	// 	padding-bottom: 45rem;
     	}
 
     }
@@ -183,7 +176,7 @@
     width: 100%;
 
   @include lm-phone {
-      background-color: blue;
+      
   }
 
 

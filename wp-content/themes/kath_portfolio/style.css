@@ -794,9 +794,6 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%; }
-  @media (min-width: 320px) {
-    .project-type-blocks {
-      background-color: blue; } }
   @media (min-width: 840px) {
     .project-type-blocks {
       width: 50%;
@@ -979,17 +976,14 @@ h3 {
     .menu .menu-item-23 a {
       padding-top: 1rem;
       padding-right: 2rem;
-      font-size: 1.5rem;
-      color: green; }
+      font-size: 1.5rem; }
     .menu .menu-item-42 a {
       padding-top: 1rem;
       font-size: 1.5rem;
-      color: green;
       padding-right: 2rem; }
     .menu #menu-item-43 {
       display: block;
-      font-size: 0.5rem;
-      background-color: red; }
+      font-size: 0.5rem; }
       .menu #menu-item-43 a {
         padding-top: 1rem;
         padding-left: 0.5rem;
@@ -998,13 +992,11 @@ h3 {
     .menu .menu-item-23 a {
       padding-top: 2.5rem;
       padding-right: 3rem;
-      font-size: 2rem;
-      color: green; }
+      font-size: 2rem; }
     .menu .menu-item-42 a {
       padding-top: 2.5rem;
       padding-right: 2rem;
-      font-size: 2rem;
-      color: green; }
+      font-size: 2rem; }
     .menu #menu-item-43 a {
       padding-top: 1rem;
       font-size: 0.80rem; } }
@@ -1019,12 +1011,11 @@ h3 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto; }
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  width: 100%; }
   .socialmedia li {
-    font-size: 14px;
     text-transform: uppercase;
     list-style-type: none; }
     .socialmedia li a {
@@ -1032,6 +1023,33 @@ h3 {
       text-decoration: none; }
     .socialmedia li a:hover {
       color: red; }
+  @media (min-width: 320px) {
+    .socialmedia {
+      margin-bottom: 1rem;
+      width: 100%;
+      padding-left: 0px; }
+      .socialmedia li {
+        padding-right: 0.20rem; }
+      .socialmedia li a {
+        color: black;
+        font-size: 12px; } }
+  @media (min-width: 840px) {
+    .socialmedia {
+      margin-bottom: 1rem;
+      width: 100%;
+      padding-left: 0px; }
+      .socialmedia li {
+        padding-right: 0.20rem; }
+      .socialmedia li a {
+        color: black;
+        font-size: 16px; } }
   @media (min-width: 1240px) {
-    .socialmedia li {
-      font-size: 20px; } }
+    .socialmedia {
+      margin-bottom: 1rem;
+      width: 100%;
+      padding-left: 0px; }
+      .socialmedia li {
+        padding-right: 0.20rem; }
+      .socialmedia li a {
+        color: black;
+        font-size: 18px; } }
