@@ -667,7 +667,8 @@ object {
   margin-right: auto;
   margin-left: auto;
   font-family: "roboto regular";
-  color: black; }
+  color: black;
+  font-size: 16px; }
 
 .hero {
   background: url(../../images/background.jpeg) fixed no-repeat center center;
@@ -743,7 +744,9 @@ object {
   .love .love-list {
     list-style-type: none;
     margin-left: auto;
-    padding-left: 0px; }
+    padding-left: 0px;
+    font-size: 1rem;
+    font-style: italic; }
 
 /* button - default css */
 .button {
@@ -763,7 +766,7 @@ object {
 
 .button:hover {
   border-top-color: #b8dbb8;
-  background: yellow;
+  background: #cfcfcf;
   color: red; }
 
 .button:active {
@@ -782,6 +785,32 @@ h3 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold; }
+  @media (min-width: 320px) {
+    h3 {
+      font-size: 1rem; } }
+  @media (min-width: 840px) {
+    h3 {
+      font-size: 1.5rem; } }
+  @media (min-width: 1240px) {
+    h3 {
+      font-size: 1.75rem; } }
+
+.project-type-block-wrapper:hover img {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+
+@keyframes flash {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
 
 .wrapper {
   width: 100%;
@@ -794,9 +823,16 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%; }
+  @media (min-width: 320px) {
+    .project-type-blocks {
+      width: 45%;
+      margin-left: 6.2rem;
+      text-align: center;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem; } }
   @media (min-width: 840px) {
     .project-type-blocks {
-      width: 50%;
+      width: 60%;
       background-color: white;
       margin: 0 auto; }
       .project-type-blocks .project-type-block-wrapper:nth-child(odd) {
@@ -816,8 +852,16 @@ h3 {
   text-align: center; }
   .project-menu h2 a {
     text-decoration: none;
-    font-size: 40px;
     color: black; }
+    @media (min-width: 320px) {
+      .project-menu h2 a {
+        font-size: 24px; } }
+    @media (min-width: 840px) {
+      .project-menu h2 a {
+        font-size: 28px; } }
+    @media (min-width: 1240px) {
+      .project-menu h2 a {
+        font-size: 35px; } }
   .project-menu h2 a:hover {
     color: red; }
 
@@ -834,12 +878,21 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem; }
+  @media (min-width: 320px) {
+    .project-menu-item {
+      padding-top: 0.5rem; } }
   .project-menu-item .project-thumbnail {
     width: 30%;
     text-align: center;
     padding: 1.5rem 1.5rem; }
     .project-menu-item .project-thumbnail img {
       border-radius: 50%; }
+    @media (min-width: 320px) {
+      .project-menu-item .project-thumbnail {
+        padding-top: 2.3rem; } }
+    @media (min-width: 840px) {
+      .project-menu-item .project-thumbnail {
+        padding-top: 1.3rem; } }
   .project-menu-item .project-info {
     width: 70%;
     text-align: left;
@@ -847,10 +900,18 @@ h3 {
 
 .single-project-title {
   text-align: center;
-  color: purple;
-  font-size: 1.5rem;
+  color: black;
   padding-bottom: 1.5rem;
   margin: 0 auto; }
+  @media (min-width: 320px) {
+    .single-project-title h2 {
+      font-size: 24px; } }
+  @media (min-width: 840px) {
+    .single-project-title h2 {
+      font-size: 28px; } }
+  @media (min-width: 1240px) {
+    .single-project-title h2 {
+      font-size: 35px; } }
 
 .date {
   text-align: center;
@@ -877,14 +938,23 @@ h3 {
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  color: purple;
+  color: grey;
   margin: 0 auto;
   padding: 1.5rem;
-  font-size: 1.75rem; }
+  font-size: 1rem; }
 
 .contact-button {
   padding: 2rem;
   text-align: center; }
+
+.error-page {
+  width: 100%;
+  margin: 0 auto;
+  height: 850px;
+  color: red;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  font-size: 14px; }
 
 /* Header  */
 .search-form fieldset {
@@ -1027,7 +1097,9 @@ h3 {
     .socialmedia {
       margin-bottom: 1rem;
       width: 100%;
-      padding-left: 0px; }
+      padding-left: 0px;
+      background: white;
+      padding: 1rem 0.5rem 1rem 0.5rem; }
       .socialmedia li {
         padding-right: 0.20rem; }
       .socialmedia li a {
@@ -1037,7 +1109,7 @@ h3 {
     .socialmedia {
       margin-bottom: 1rem;
       width: 100%;
-      padding-left: 0px; }
+      padding: 1rem 0.5rem 1rem 0.5rem; }
       .socialmedia li {
         padding-right: 0.20rem; }
       .socialmedia li a {
@@ -1047,7 +1119,7 @@ h3 {
     .socialmedia {
       margin-bottom: 1rem;
       width: 100%;
-      padding-left: 0px; }
+      padding: 1rem 0.5rem 1rem 0.5rem; }
       .socialmedia li {
         padding-right: 0.20rem; }
       .socialmedia li a {

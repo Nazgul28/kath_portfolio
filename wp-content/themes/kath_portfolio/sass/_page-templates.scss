@@ -6,38 +6,38 @@
 
 .content-area {
   width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: $font__main;
-    color: $color__text-main;
-
+  margin-right: auto;
+  margin-left: auto;
+  font-family: $font__main;
+  color: $color__text-main;
+  font-size: 16px;
 }
 
 
 .hero {
-    background: url(../../images/background.jpeg) fixed no-repeat center center;
-    justify-content: center;
-    height: 1000px;
-    margin-bottom: 3rem;
-    width:100%;
-    display: flex;
-    align-items: center;
+  background: url(../../images/background.jpeg) fixed no-repeat center center;
+  justify-content: center;
+  height: 1000px;
+  margin-bottom: 3rem;
+  width:100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  .herotext{
     text-align: center;
-    position: relative;
-    .herotext{
-    		text-align: center;
-    		width:90%;
-    		line-height: 1.80rem;
-    		padding-bottom: 10rem;
+    width:90%;
+    line-height: 1.80rem;
+    padding-bottom: 10rem;
     p {
-        color: black;
-        font-size: 16px;
-        text-transform: none;
+      color: black;
+      font-size: 16px;
+      text-transform: none;
     }
     @include lm-desktop {
-    	}
-
     }
+
+  }
 }
 
 
@@ -52,13 +52,13 @@
 }
 
 .decorative {
-    border: none;
-    color: black;
-    margin-bottom: 3rem;
-    max-width: 320px;
-    padding: 0;
-    width: 50%;
-    text-align: center;
+  border: none;
+  color: black;
+  margin-bottom: 3rem;
+  max-width: 320px;
+  padding: 0;
+  width: 50%;
+  text-align: center;
 }
 
 .about {
@@ -85,11 +85,11 @@
 		}
 	}
 
-.button{
-	background: black;
-	color: white;
+  .button{
+   background: black;
+   color: white;
 
-}
+ }
 
 }
 
@@ -102,8 +102,10 @@
 		list-style-type: none;
 		margin-left: auto;
 		padding-left: 0px;
+    font-size: 1rem;
+    font-style: italic;
 
-	}
+  }
 
 
 }
@@ -113,54 +115,87 @@
 /* button - default css */ 
 
 .button {
-   border-top: 1px solid #96d1f8;
-   background: yellow;
-   background: -webkit-gradient(linear, left top, left bottom, from(#d8f216), to(#c1d665));
-   background: -webkit-linear-gradient(top, #d8f216, #c1d665);
-   background: -moz-linear-gradient(top, #d8f216, #c1d665);
-   background: -ms-linear-gradient(top, #d8f216, #c1d665);
-   background: -o-linear-gradient(top, #d8f216, #c1d665);
-   padding: 12px 24px;
-   -webkit-border-radius: 1px;
-   -moz-border-radius: 1px;
-   border-radius: 1px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: black;
-   font-size: 16px;
-   font-family: Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   text-transform: uppercase;
-   }
+ border-top: 1px solid #96d1f8;
+ background: yellow;
+ background: -webkit-gradient(linear, left top, left bottom, from(#d8f216), to(#c1d665));
+ background: -webkit-linear-gradient(top, #d8f216, #c1d665);
+ background: -moz-linear-gradient(top, #d8f216, #c1d665);
+ background: -ms-linear-gradient(top, #d8f216, #c1d665);
+ background: -o-linear-gradient(top, #d8f216, #c1d665);
+ padding: 12px 24px;
+ -webkit-border-radius: 1px;
+ -moz-border-radius: 1px;
+ border-radius: 1px;
+ -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+ -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+ box-shadow: rgba(0,0,0,1) 0 1px 0;
+ text-shadow: rgba(0,0,0,.4) 0 1px 0;
+ color: black;
+ font-size: 16px;
+ font-family: Helvetica, Arial, Sans-Serif;
+ text-decoration: none;
+ vertical-align: middle;
+ text-transform: uppercase;
+}
 .button:hover {
-   border-top-color: #b8dbb8;
-   background: yellow;
-   color: red;
-   }
+ border-top-color: #b8dbb8;
+ background: #cfcfcf;
+ color: red;
+}
 .button:active {
-   border-top-color:#aeb2c2;
-   background: #091954;
-   }
+ border-top-color:#aeb2c2;
+ background: #091954;
+}
 
 /* WORK page - Projects */
 
 
-	.project-type-block-wrapper a{
-		color: black;
-		text-decoration: none;
-	}
-	a:hover{
-		color: red;
-	}
+.project-type-block-wrapper a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
 
-	h3{
-		text-align: center;
+h3{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  @include lm-phone {
+    font-size: 1rem;
+  }
+  @include lm-tablet {
     font-size: 1.5rem;
-    font-weight: bold;
-	}
+  }
+  @include lm-desktop {
+    font-size: 1.75rem;
+  }
+}
+
+
+
+.project-type-block-wrapper:hover img{
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 
 
@@ -170,21 +205,25 @@
 }
 
 .project-type-blocks{
-    padding-top: 2rem;
-    text-align: center;
-    align-items: center;
-    width: 100%;
+  padding-top: 2rem;
+  text-align: center;
+  align-items: center;
+  width: 100%;
 
   @include lm-phone {
-      
+    width: 45%;
+    margin-left: 6.2rem;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
 
   
   @include lm-tablet {
-      width: 50%;
-      background-color: white;
-      margin: 0 auto;
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
 
 
     .project-type-block-wrapper:nth-child(odd) {
@@ -205,7 +244,6 @@
     }
   }
 
-
 }
 
 
@@ -217,13 +255,23 @@
 .project-menu h2 {
   text-align: center;
   a{
-  text-decoration: none;
-  font-size: 40px;
-  color: black;
-}
-a:hover{
-  color: red;
-}
+    text-decoration: none;
+    color: black;
+    @include lm-phone {
+      font-size: 24px;
+    }
+    @include lm-tablet {
+      font-size: 28px;
+
+    }
+
+    @include lm-desktop {
+      font-size: 35px;
+    }
+  }
+  a:hover{
+    color: red;
+  }
 }
 
 .page-header{
@@ -236,6 +284,9 @@ a:hover{
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  @include lm-phone {
+    padding-top:0.5rem;
+  }
   
   .project-thumbnail{
     width: 30%;
@@ -244,7 +295,15 @@ a:hover{
     img{
       border-radius: 50%;
     }
+    @include lm-phone {
+      padding-top: 2.3rem;
+    }
+    @include lm-tablet {
+      padding-top: 1.3rem;
+    }
   }
+
+
   .project-info{
     width: 70%;
     text-align: left;
@@ -257,12 +316,24 @@ a:hover{
 
 .single-project-title{
 
-text-align: center;
-color: purple;
-font-size: 1.5rem;
-padding-bottom: 1.5rem;
-margin: 0 auto;
+  text-align: center;
+  color: black;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  h2{
+    @include lm-phone {
+      font-size: 24px;
+    }
+    @include lm-tablet {
+      font-size: 28px;
 
+    }
+
+    @include lm-desktop {
+      font-size: 35px;
+    }
+
+  }
 }
 
 .date{
@@ -296,18 +367,26 @@ margin: 0 auto;
   text-align: center;
   font-weight: bold;
   font-style: italic;
-  color: purple;
+  color: grey;
   margin: 0 auto;
   padding: 1.5rem;
-  font-size: 1.75rem;
+  font-size: 1rem;
 
 }
-
 
 .contact-button{
   padding:2rem;
   text-align: center;
 }
 
+// 404 PAGE - ERROR
 
-
+.error-page{
+  width: 100%;
+  margin: 0 auto;
+  height: 850px;
+  color: red;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  font-size: 14px;
+}
