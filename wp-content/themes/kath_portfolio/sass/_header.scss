@@ -1,3 +1,5 @@
+
+
 /* Header  */
 
 
@@ -70,6 +72,7 @@
 }
 
 
+
    .menu {
    	color: $color__text-main;
    	font-family: $font__main;
@@ -100,25 +103,37 @@
 	}
 	}
 
+	
 	@include lm-phone {
-		.main-navigation{
-			padding:0.5rem;
+		.menu-item-23 a{
+			// color: red;
+			padding-left: 0px;
+			// padding-right: 10rem;
 		}
+
+		.menu-item-42 a{
+			// color: blue;
+
+	}
+
 		#menu-item-43{
 			display: none;
 		}
 	}
+	
 	@include lm-tablet {
 
 		.menu-item-23 a {
 			padding-top: 1rem;
 			padding-right: 2rem;
 			font-size: 1.5rem;
+			color: black;
 		}
 		.menu-item-42 a {
 		padding-top: 1rem;
 		font-size: 1.5rem;
 		padding-right: 2rem;
+		color: black;
 		}
 	
 		#menu-item-43{
@@ -130,7 +145,6 @@
 			font-size: 0.5rem;
 		}
 	}
-}
 
 @include lm-desktop {
 	.menu-item-23 a {
@@ -148,6 +162,7 @@
 		font-size: 0.80rem;
 
 	}
+}
 }
 }
 

@@ -24,6 +24,7 @@
   align-items: center;
   text-align: center;
   position: relative;
+  // -webkit-transform: translateZ(0);
   .herotext{
     text-align: center;
     width:90%;
@@ -34,9 +35,14 @@
       font-size: 16px;
       text-transform: none;
     }
-    @include lm-desktop {
+    @include lm-phone {
+      width: 100%;
     }
-
+  }
+     @include lm-phone {
+      width: 100%;
+      height: 100vh;
+      -webkit-transform: translateZ(0);
   }
 }
 

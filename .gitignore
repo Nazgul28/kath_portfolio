@@ -53,7 +53,7 @@ wp-content/plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ========================================================== #
 wp-content/themes/*
-!wp-content/themes/kath_portfolio
+!wp-content/themes/kath_portfolio/
 
 
 # Ignore packages #
