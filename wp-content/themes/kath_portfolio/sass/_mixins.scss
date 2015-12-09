@@ -14,10 +14,11 @@
 
 
 @mixin lm-phone {
-  @media (min-width: #{$lm-phone-width}) {
+  @media (min-device-width: #{$lm-phone-width}) {
     @content;
   }
 }
+
 
 @mixin lm-tablet {
   @media (min-width: #{$lm-tablet-width}) {

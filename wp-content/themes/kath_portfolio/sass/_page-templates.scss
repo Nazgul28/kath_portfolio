@@ -24,7 +24,17 @@
   align-items: center;
   text-align: center;
   position: relative;
-  // -webkit-transform: translateZ(0);
+  // iphones
+  -webkit-background: url(../../images/background.jpeg) fixed no-repeat center center;
+  -webkit-justify-content: center;
+  -webkit-height: 1000px;
+  -webkit-margin-bottom: 3rem;
+  -webkit-width:100%;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-text-align: center;
+  -webkit-position: relative;
+
   .herotext{
     text-align: center;
     width:90%;
@@ -42,9 +52,20 @@
      @include lm-phone {
       width: 100%;
       height: 100vh;
-      -webkit-transform: translateZ(0);
   }
 }
+
+// Iphones
+
+// @media only screen 
+//   and (min-device-width: 375px) 
+//   and (max-device-width: 667px)
+//   and (-webkit-min-device-pixel-ratio: 2) {
+//     .hero{
+//       background: red;
+//     }
+//   }
+
 
 
 .what{

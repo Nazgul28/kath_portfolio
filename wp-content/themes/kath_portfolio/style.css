@@ -678,14 +678,22 @@ object {
   height: 1000px;
   margin-bottom: 3rem;
   width: 100%;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  position: relative; }
+  position: relative;
+  -webkit-background: url(../../images/background.jpeg) fixed no-repeat center center;
+  -webkit-justify-content: center;
+  -webkit-height: 1000px;
+  -webkit-margin-bottom: 3rem;
+  -webkit-width: 100%;
+  -webkit-display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-text-align: center;
+  -webkit-position: relative; }
   .hero .herotext {
     text-align: center;
     width: 90%;
@@ -695,14 +703,13 @@ object {
       color: black;
       font-size: 16px;
       text-transform: none; }
-    @media (min-width: 320px) {
+    @media (min-device-width: 320px) {
       .hero .herotext {
         width: 100%; } }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
     .hero {
       width: 100%;
-      height: 100vh;
-      -webkit-transform: translateZ(0); } }
+      height: 100vh; } }
 
 .what {
   width: 100%;
@@ -792,7 +799,7 @@ h3 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold; }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
     h3 {
       font-size: 1rem; } }
   @media (min-width: 840px) {
@@ -830,7 +837,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%; }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
     .project-type-blocks {
       width: 45%;
       margin-left: 6.2rem;
@@ -860,7 +867,7 @@ h3 {
   .project-menu h2 a {
     text-decoration: none;
     color: black; }
-    @media (min-width: 320px) {
+    @media (min-device-width: 320px) {
       .project-menu h2 a {
         font-size: 24px; } }
     @media (min-width: 840px) {
@@ -885,7 +892,7 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem; }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
     .project-menu-item {
       padding-top: 0.5rem; } }
   .project-menu-item .project-thumbnail {
@@ -894,7 +901,7 @@ h3 {
     padding: 1.5rem 1.5rem; }
     .project-menu-item .project-thumbnail img {
       border-radius: 50%; }
-    @media (min-width: 320px) {
+    @media (min-device-width: 320px) {
       .project-menu-item .project-thumbnail {
         padding-top: 2.3rem; } }
     @media (min-width: 840px) {
@@ -910,7 +917,7 @@ h3 {
   color: black;
   padding-bottom: 1.5rem;
   margin: 0 auto; }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
     .single-project-title h2 {
       font-size: 24px; } }
   @media (min-width: 840px) {
@@ -987,15 +994,38 @@ h3 {
   padding-left: 1rem; }
   .site-header .logoheader img {
     max-width: 100%; }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
+    .site-header .header-container {
+      width: 50%; }
     .site-header .main-navigation {
       padding: 0.5rem; }
     .site-header .logoheader img {
-      max-width: 120%;
+      max-width: 100%;
       padding-top: 0.5rem; } }
   @media (min-width: 840px) {
     .site-header .logoheader img {
       max-width: 90%; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .site-header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  .header-container {
+    width: 50%; } }
 
 .fixed-header {
   position: fixed;
@@ -1044,7 +1074,7 @@ h3 {
       font-size: 13px; }
     .menu #menu-item-43 li a {
       font-size: 0.90rem; }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
     .menu .menu-item-23 a {
       padding-left: 0px; }
     .menu #menu-item-43 {
@@ -1103,7 +1133,7 @@ h3 {
       text-decoration: none; }
     .socialmedia li a:hover {
       color: red; }
-  @media (min-width: 320px) {
+  @media (min-device-width: 320px) {
     .socialmedia {
       margin-bottom: 1rem;
       width: 100%;
