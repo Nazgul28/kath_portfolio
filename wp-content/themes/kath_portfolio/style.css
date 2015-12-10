@@ -718,6 +718,11 @@ object {
   padding-right: 1.5rem; }
   .what h2 {
     text-transform: uppercase; }
+  @media (min-width: 1240px) {
+    .what {
+      line-height: 2rem; }
+      .what h2, .what h3 {
+        display: none; } }
 
 .decorative {
   border: none;
@@ -734,6 +739,20 @@ object {
   padding-right: 1.5rem; }
   .about h2 {
     text-transform: uppercase; }
+  @media (min-width: 1240px) {
+    .about {
+      color: grey;
+      line-height: 2rem;
+      padding-top: 2rem;
+      font-size: 14px; }
+      .about h2 {
+        display: none; } }
+
+@media (min-width: 1240px) {
+  .container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .education {
   width: 100%;
@@ -749,6 +768,20 @@ object {
   .education .button {
     background: black;
     color: white; }
+  @media (min-width: 1240px) {
+    .education {
+      width: 40%;
+      background-color: white;
+      border-left: 3px solid black;
+      font-size: 13px;
+      padding-bottom: 2rem; }
+      .education span {
+        color: #e6077a;
+        font-weight: bold; }
+      .education .button {
+        background: white;
+        border: 2px solid black;
+        color: black; } }
 
 .love {
   width: 100%;
@@ -761,6 +794,9 @@ object {
     padding-left: 0px;
     font-size: 1rem;
     font-style: italic; }
+  @media (min-width: 1240px) {
+    .love {
+      display: none; } }
 
 /* button - default css */
 .button {
@@ -1158,7 +1194,8 @@ h3 {
   @media (min-width: 1240px) {
     .socialmedia {
       margin-bottom: 1rem;
-      width: 100%;
+      width: 70%;
+      float: left;
       padding: 1rem 0.5rem 1rem 0.5rem; }
       .socialmedia li {
         padding-right: 0.20rem; }
