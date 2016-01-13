@@ -1,6 +1,6 @@
-# Portfolio of the UX Design - Katherine Wearing - 
+# Portfolio of the UX Designer: Katherine Wearing.
 
-I've built the website porfolio based on her design and comps.
+I've built the website porfolio based on Katherine's design and comps.
 
 I've used Wordpress and the RED starter theme.
 
@@ -8,9 +8,9 @@ I could customize the theme and implement a taxonomy for her projects as you may
 
 I've used jQuery functions to implement the "smooth scrolling"effect and to the "sticky menu". In the "sticky menu" task I used some CSS transition effects in order to highlight the nav bar.
 
-On the CSS I've used flebox to align the placeholders of the categories in the "Work" page.
+On the CSS3 I've used flebox to align the placeholders of the categories in the "Work" page.
 
-The website is responsive for 3 breakpoints (mobile, tablet and desktop), however I had to implement one more breakpoint specifically for Iphones using "max-device-width". 
+The website is responsive for 3 breakpoints (mobile, tablet and desktop), however I had to implement one more breakpoint specifically for Iphones using "max-device-width" since Safari it's a tricky browser. 
 
 
 
